@@ -13,7 +13,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURL = 'mongodb+srv://me2023:cFfbM2fVz5mwDxzh@cluster0.pfinqpn.mongodb.net/?retryWrites=true&w=majority';
+const dbURL = 'mongodb+srv://me2023:cFfbM2fVz5mwDxzh@cluster0.pfinqpn.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true})
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
