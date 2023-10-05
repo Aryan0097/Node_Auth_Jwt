@@ -36,22 +36,26 @@ app.use(authroutes);
 
 
 
-//cookies
-app.get('/set-cookies',(req,res)=>{
+// //cookies
+// app.get('/set-cookies',(req,res)=>{
 
-  // res.setHeader('Set-Cookie','newUser=true');
+//   // res.setHeader('Set-Cookie','newUser=true');
 
-  res.cookie('newUser',false);
-  // res.cookie('isEmployee',true,{maxAge:1000*5,secure:true});
-  // res.cookie('isEmployee',true,{maxAge:1000*5,httpOnly:true});
+//   res.cookie('newUser',false);
+//   // res.cookie('isEmployee',true,{maxAge:1000*5,secure:true});
+//   // res.cookie('isEmployee',true,{maxAge:1000*5,httpOnly:true});
 
 
-  res.send('you got the cookies!');
-});
+//   res.send('you got the cookies!');
+// });
 
-app.get('/read-cookies',(req,res)=>{
+// app.get('/read-cookies',(req,res)=>{
 
-  const cookies=req.cookies;
-  console.log(cookies.newUser);
-  res.json(cookies);
-});
+//   const cookies=req.cookies;
+//   console.log(cookies.newUser);
+//   res.json(cookies);
+// });
+
+
+
+
